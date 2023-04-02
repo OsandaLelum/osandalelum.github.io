@@ -352,6 +352,9 @@ img {
   width: 40%;
 }
 
+.AIbotright{
+  width: 10%;
+}
 .work__img img {
   transition: 1s;
 }

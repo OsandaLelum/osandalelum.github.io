@@ -88,3 +88,14 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+let utterance = new SpeechSynthesisUtterance("hello my friend my name is Osanda Lelum and this is my personal portfolio website. i am a student and i amd a full stack web devloper and Ui and Lecturer in computer Science.if you want to contact me you can contact me through this website thansks");
+     function speakstart(){
+         speechSynthesis.speak(utterance);       
+     }
+    // Al
+    let ai = new SpeechSynthesisUtterance("Artificial Intelligent is the feature technology");
+    
+    function aistart(){
+         speechSynthesis.speak(ai);        
+     }
