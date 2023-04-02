@@ -53,7 +53,7 @@ body {
 
 .robot-control{
   position: fixed;
-  margin-left: 92%;
+  margin-left: 90%;
   z-index: 2;
   border-radius: 50%;
   cursor: pointer;
