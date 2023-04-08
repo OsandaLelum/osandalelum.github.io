@@ -19,9 +19,6 @@
 
     <body>
 
-        <div id="preloader">
-
-        </div>
         <!--===== HEADER =====-->
         <header class="l-header" >
             <nav class="nav bd-grid" >
@@ -88,9 +85,9 @@
                     
                     
                     <h5 class="home__title" style="color: #fff;">Hi,<br/>I am <span class="home__title-color">Osanda</span><br></h5>
-                    <p style="color: #fff; font-size: medium;">A Programming Enthusiast<br/>
-                        I'm an enthusiastic computer science graduate <br/>from  University of Colombo School of Computing.<br/>Aspires to work& Lecturing in the field of computer science 
-                        and <br/>reading for Masters in Financial Engineering in University of Colombo</p>
+                    <p style="color: #fff; font-size: larger;">A Programming Enthusiast<br/>
+                        I'm an enthusiastic computer science graduate <br/>from  University of Colombo School of Computing.<br/>Aspires to work& Lecturing in the field<br/> of computer science 
+                        and <br/>reading for Masters in Financial Engineering<br/> in University of Colombo</p>
                         
    
                         <br/>
@@ -690,7 +687,7 @@
 
 <section class="cources section" id="cources">
 <h2 class="section-title">Lecturing Cources</h2>
-<div class="cources__container">
+<div class="cources__containerx">
     <div class="ag-courses_box">
         <div class="ag-courses_item">
             <a href="https://www.paceinstitute.lk/web-development/" class="ag-courses-item_link">
@@ -746,7 +743,7 @@
 </section>
 
 <section>
-    <h2 class="section-title">Lecturing Cources</h2>
+    <h2 class="section-title">Mathematics Geometry Book</h2>
     <br/>
     <br/>
     <br/>
@@ -754,12 +751,12 @@
 	data="./My First Book.pdf"
 	type="application/pdf"
 	width="100%"
-    height="100%"
+    height="500"
 	aria-labelledby="PDF document"
 >
 	<p>
 		Your browser does not support PDFs.
-		<a href="document.pdf">Download the PDF</a>
+		<button href="document.pdf" class="glow-on-hover">Download the PDF</button>
 	</p>
 </object> 
     </section>
@@ -875,7 +872,7 @@
              const phone = document.getElementById("phone").value;
              const contact = document.getElementById("contact").value;
 
-             let body = contact +name + email + phone 
+             const body = contact +name + email + phone 
 
 
             Email.send({

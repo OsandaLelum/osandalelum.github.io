@@ -1249,11 +1249,3 @@ img {
     }
   }
 
-
-  #preloader{
-    background-color: #000;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    z-index: 100;
-  }
