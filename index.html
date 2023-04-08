@@ -18,6 +18,10 @@
   
 
     <body>
+
+        <div id="preloader">
+
+        </div>
         <!--===== HEADER =====-->
         <header class="l-header" >
             <nav class="nav bd-grid" >
@@ -84,13 +88,15 @@
                     
                     
                     <h5 class="home__title" style="color: #fff;">Hi,<br/>I am <span class="home__title-color">Osanda</span><br></h5>
-                    <p style="color: #fff;">A Programming Enthusiast<br/>
+                    <p style="color: #fff; font-size: medium;">A Programming Enthusiast<br/>
                         I'm an enthusiastic computer science graduate <br/>from  University of Colombo School of Computing.<br/>Aspires to work& Lecturing in the field of computer science 
                         and <br/>reading for Masters in Financial Engineering in University of Colombo</p>
+                        
+   
                         <br/>
                       
                         <button onclick ="window.location.href='CV+PM+(2).pdf';" type="button" class="glow-on-hover">Hire Me</button>
-                         
+                     
                 </div>
             </div>         
          
@@ -99,6 +105,8 @@
                     <a href="https://twitter.com/OsandaLelum" class="home__social-icon"><i class='bx bxl-twitter' ></i></a>
                     <a href="https://github.com/OsandaLelum" class="home__social-icon"><i class='bx bxl-github' ></i></a>
                 </div>
+            
+                          
             
                 <div class="home__img">
                     <svg class="home__blob" viewBox="0 0 479 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -738,12 +746,15 @@
 </section>
 
 <section>
-    
+    <h2 class="section-title">Lecturing Cources</h2>
+    <br/>
+    <br/>
+    <br/>
     <object
 	data="./My First Book.pdf"
 	type="application/pdf"
 	width="100%"
-	height="100%"
+    height="100%"
 	aria-labelledby="PDF document"
 >
 	<p>
@@ -903,5 +914,12 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        <script>
+        var loader =Document.getElementById("preloader");
+        window.addEventListener("load",function(){
+            loader.style.display="none";
+        })
+
+        </script>
     </body>
 </html>
