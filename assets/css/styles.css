@@ -60,6 +60,14 @@ body {
   width:10%;
 }
 
+.robot-contact{
+  position: relative ;
+  margin-left: 50%;
+  z-index: 2;
+  border-radius: 50%;
+  cursor: pointer;
+  width:10%;
+}
 h1, h2, p {
   margin: 0;
 }
