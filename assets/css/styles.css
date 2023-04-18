@@ -98,6 +98,15 @@ img {
   text-align: center;
 }
 
+.section-title-sub {
+  position: relative;
+  font-size: var(--h4-font-size);
+  color: var(--first-color);
+  margin-top: var(--mb-2);
+  margin-bottom: var(--mb-4);
+  text-align: center;
+}
+
 .section-title::after {
   position: absolute;
   content: '';

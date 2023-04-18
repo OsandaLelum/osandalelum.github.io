@@ -762,23 +762,35 @@
     </section>
 
 
-
-
-
-<script src="https://smtpjs.com/v3/smtp.js"> </script>
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
-
+                <h5 class="section-title-sub">Please use the form below to send us a message. I'll get back to you as soon as possible.</h5>
                 <div class="contact__container bd-grid">
                     <form action="" class="contact__form"  onsubmit="sendEmail(); reset(); return false;">
                         <input type="text" id="name" placeholder="Name" class="contact__input" onkeyup="validationName()">
                         <input type="mail" id="email" placeholder="Email" class="contact__input" onkeyup="validationEmail()">
                         <input type="text" id="phone" placeholder="Phone" class="contact__input" onkeyup="validationPhone()">
-                        <textarea  id="contact" cols="0" rows="5" placeholder="Contact Osa" class="contact__input"></textarea>
-                        <button type="submit" class="glow-on-hover">Contact Osa</button>
+                      
+                        <textarea type="text" id="contact"  placeholder="Contact Osa" rows="4" cols="0" class="contact__input" onkeyup="validationmassage()"></textarea>
+
+                        <form onsubmit="validateForm()"> <button type="submit" class="glow-on-hover">Contact Osa</button></form>
                     </form>
+
+                    <br/>
+                    <br/>
+        
+                    <h5 class="section-title">
+                    Alternatively, you can reach Me at:
+          </h5>
+                    <h5 class="section-title-sub">
+                   Personal Email: osandalelum@gmail.com<br/>
+                   Pace Institute Email: lecturer.osanda@pace.lk<br/>
+                   GRI Email : osandal@gritires.com<br/>
+                   Phone: +94715656710<br/>
+                   </h5>
                 </div>
+
                 <br/>
                 <br/>
                 
@@ -787,118 +799,10 @@
                 <div class="robot-contact">
                     <a href="https://calendly.com/osandalelum/meetosa"><img src="assets/img/contact.gif"/></a>
                  </div>
-
-                 
+                
             </section>
 
                  
-        
-        <script> 
-              //start form validation
-    var nameError = document.getElementById('name-error');
-    var phoneError = document.getElementById('Phone-error');
-    var EmailError = document.getElementById('email-error');
-    var Meassageerror = document.getElementById('massage-error');
-    var SubmitError = document.getElementById('submit-error');
-
-
-   function validationName(){
-       var name = document.getElementById('name').value;
-       if(name.lenght == 0){
-         nameError.innerHTML = "name is Require";
-         return false;
-       }
-       if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
-           nameError.innerHTML = '<i class="fa fa-times" style="background-colour:red;"></i>';
-           return false;
-       }
-       nameError.innerHTML = '<i class="fa fa-check-circle"></i>';
-       return true;
-   }
-
-   function validationPhone(){
-
-      var phone = document.getElementById("phone").value;
-
-      if(phone.lenght == 0){
-          phoneError.innerHTML = "phone no is required";
-          return false;
-        }
-        
-          if(!phone.match(/^[0-9]{10}$/)){
-            phoneError.innerHTML = '<i class="fa fa-times"></i>';
-             return false;
-              }
-           phoneError.innerHTML = '<i class="fa fa-check-circle"></i>';
-           return true; 
-   }
-
-   function validationEmail(){
-       var Email = document.getElementById('email').value;
-       if(Email.lenght == 0){
-          EmailError.innerHTML = 'fill the Email';
-          return false;
-       }
-       
-       if(!Email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)){
-           EmailError.innerHTML = '<i class="fa fa-times"></i>';
-           return false;
-       }
-  
-          EmailError.innerHTML = '<i class="fa fa-check-circle"></i>';
-          return true; 
-   }
-
-   function validationmassage(){
-       var massage = document.getElementById('message-control').value;
-        var required = 30;
-
-        var left = required - massage.length;
-
-        if(left > 0)
-        {
-          Meassageerror.innerHTML = left + 'more character require';
-          return false;  
-        }
-
-        Meassageerror.innerHTML = '<i class="fa fa-check-circle"></i>';
-        return true;
-
-   } 
-   function validateForm(){
-       if(!validationName() || !validationPhone() || !validationEmail() ){
-           SubmitError.style.display = 'block';
-           SubmitError.innerHTML = 'please fix error to submit';
-           setTimeout(function(){
-               SubmitError.style.display = 'none';
-           }, 12000);
-       }
-   }
-
-   //send email
-           function sendEmail(){
-             const name = document.getElementById("name").value;
-             const email = document.getElementById("email").value;
-             const phone = document.getElementById("phone").value;
-             const contact = document.getElementById("contact").value;
-
-             const body = contact +name + email + phone 
-
-
-            Email.send({
-              SecureToken :"7ef95e53-6589-4c21-b18b-4c412cc0d986",
-              To : 'osandalelum@gmail.com',
-              From : "email",
-              Subject : "From Osas  Portofolio",
-              Body : body
-            }).then(
-                message => alert(message)
-            );
-          }
-  
-        </script>
-        </main>
-
         <!--===== FOOTER =====-->
         <footer class="footer">
             <p class="footer__title">Osanda Lelum</p>
@@ -908,17 +812,17 @@
                 <a href="https://www.instagram.com/osanda_97/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
                 <a href="https://twitter.com/OsandaLelum" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-            <p class="footer__copy"> All rigths reserved || Developed by OsAndroid</p>
+            <p class="footer__copy"> All rights reserved || Developed by <a href="">OsAndroid</a></p>
         </footer>
    
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          AOS.init();
-        </script>
-
+        <script src="assets/js/contact.js"></script>
+        
+        <script src="https://smtpjs.com/v3/smtp.js"> </script>
         
         <!--===== SCROLL REVEAL =====-->
        <script src="https://unpkg.com/scrollreveal"></script> 
+
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
