@@ -1,18 +1,26 @@
 .ag-format-container {
-    width: 1142px;
+    width: 842px;
     margin: 0 auto;
   }
-  
+
+  .cources__containerx{
+    width: 70%;
+    margin: 0 auto;
+
+
+  }
   
   .ag-courses_box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    min-height: max-content;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    
   
     padding: 50px 0;
   }
