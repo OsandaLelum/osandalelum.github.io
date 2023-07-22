@@ -1,3 +1,5 @@
 # osandalelum.github.io
+# osandal.github.io
 
-Contact ME
+
+Contact ME via my Portfolio
